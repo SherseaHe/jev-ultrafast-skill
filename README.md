@@ -1,5 +1,7 @@
 # Jev Ultrafast Skill
 
+[English](README.md) | [简体中文](README.zh-CN.md)
+
 A portable Agent Skill for using [browser-use/jev-ultrafast](https://github.com/browser-use/jev-ultrafast) with Codex and other agents that support SKILL.md. Community wrapper; not affiliated with or endorsed by Browser Use or TypeSafe.
 
 Jev chooses browser operations and targets; Browser Harness controls Chrome. This repository provides agent instructions and a small bounded runner. It does not contain the upstream runtime, model weights, API keys or browser profiles.
@@ -15,10 +17,6 @@ npx skills add SherseaHe/jev-ultrafast-skill --skill jev-ultrafast
 For a local clone, run `npx skills add . --skill jev-ultrafast` from its root. Add `-g` for a global installation. Alternatively copy `skills/jev-ultrafast` to your agent's documented skills directory (for Codex, `~/.codex/skills/jev-ultrafast`). Preserve an existing custom Skill before replacing it.
 
 Install/configure the separate upstream runtime using [setup instructions](skills/jev-ultrafast/references/setup.md). Set `JEV_ULTRAFAST_HOME` if your checkout is outside `~/.local/share/jev-ultrafast`. Keep the `.env` in the runtime checkout, never in this repository.
-
-## 中文说明
-
-这是把 Jev Ultrafast 封装给 Codex 等编程代理使用的社区 Skill。安装 Skill 后，还需按 [配置说明](skills/jev-ultrafast/references/setup.md) 安装独立运行环境、填写自己的 TypeSafe API Key，并开启 Chrome 远程调试。它支持多步浏览器操作和结果校验；读取全文可按需启用。API 调用可能收费，网页观察内容会发送给模型服务。
 
 ## Use
 
